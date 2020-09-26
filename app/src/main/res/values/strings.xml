@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ItheanaTest</string>
+    <string name="oops_no_internet">OOPS NO INTERNET</string>
+    <string name="try_again">Try Again</string>
+    <string name="oops_something_went_wrong">OOPS SOMETHING WENT WRONG</string>
+
+    <string name="cd_repeat">Repeat one or all</string>
+    <string name="cd_previous">Skip backwards</string>
+    <string name="cd_play">Play and pause</string>
+    <string name="cd_next">Skip forwards</string>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_extra_micro">10sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+
+
+</resources>

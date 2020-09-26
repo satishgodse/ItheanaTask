@@ -1,0 +1,57 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        // App dependencies
+        appCompatVersion = '1.1.0'
+        constraintLayoutVersion = '1.1.3'
+        coroutinesVersion = "1.3.5"
+        firebaseAnalyticsVersion = "17.4.4"
+        firebaseMessagingVersion = "20.2.4"
+        firebaseCrashlyticsVersion = "17.1.1"
+        firebaseCrashlyticsPluginVersion = "2.2.0"
+        glideVersion = '4.11.0'
+        kotlinVersion = '1.3.72'
+        ktxVersion = '1.1.0'
+        lifecycleVersion = '2.2.0'
+        materialVersion = '1.1.0'
+        multidexVersion = "2.0.1"
+        navigationVersion = '2.3.0'
+        roomVersion = '2.2.5'
+        workVersion = '2.1.0'
+        playServiceVersion = '17.0.0'
+        playServicePhoneApiVersion = '17.4.0'
+        playServicePluginVersion = '4.3.3'
+        gsonVersion = '2.8.2'
+        okhttp = '3.10.0'
+        retrofit = '2.6.0'
+        rxjava2Version = '2.1.9'
+        rxandroidVersion = '2.1.1'
+    }
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$rootProject.kotlinVersion"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$rootProject.navigationVersion"
+        classpath "com.google.firebase:firebase-crashlytics-gradle:$rootProject.firebaseCrashlyticsPluginVersion"
+        classpath "com.google.gms:google-services:$rootProject.playServicePluginVersion"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
